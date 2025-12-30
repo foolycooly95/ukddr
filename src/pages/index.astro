@@ -1,0 +1,37 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout
+    ><div class="grid grid-cols-1 lg:grid-cols-2 text-white gap-4">
+        <Card
+            icon="mdi:card-account-details"
+            title="Network Guide"
+            description="Use your eAmusement card with Project Flower and Ganymede"
+            colour="#58f2e5"
+            href="/network/"
+        />
+        <Card
+            icon="mdi:location"
+            title="Locations"
+            description="Find DDR cabinets near you"
+            colour="#f25865"
+            href="/locations/"
+        />
+        <Card
+            icon="mdi:tools"
+            title="ddr.rtfoy.co.uk"
+            description="Community developed toolkit"
+            colour="#f2e558"
+            href="https://ddr.rtfoy.co.uk/"
+        />
+        <Card
+            icon="ic:baseline-discord"
+            title="Discord"
+            description="Join the community!"
+            colour="#5865f2"
+            href="/discord/"
+        />
+    </div>
+</Layout>

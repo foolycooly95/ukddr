@@ -1,0 +1,14 @@
+---
+import { Icon } from "astro-icon/components";
+const { icon, title, description, colour, href } = Astro.props;
+---
+
+<a
+    class="border-2 p-4 rounded-2xl flex flex-col gap-2"
+    style={`border-color: ${colour};`}
+    href={href}
+    ><div class="font-semibold flex flex-row gap-2 items-center">
+        <Icon name={icon} /><span>{title}</span>
+    </div>
+    <span>{description}</span></a
+>
