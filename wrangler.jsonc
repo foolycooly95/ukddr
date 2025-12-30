@@ -1,16 +1,19 @@
 {
-	"main": "dist/_worker.js/index.js",
-	"name": "ukddr",
+  "main": "dist/_worker.js/index.js",
+  "name": "ukddr",
   "compatibility_date": "2025-12-30",
-  "compatibility_flags": [
-    "nodejs_compat",
-    "global_fetch_strictly_public"
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "./dist",
+  },
+  "observability": {
+    "enabled": true,
+  },
+  "routes": [
+    {
+      "pattern": "ukddr.fooly.net",
+      "custom_domain": true,
+    },
   ],
-	"assets": {
-		"binding": "ASSETS",
-		"directory": "./dist"
-	},
-	"observability": {
-    "enabled": true
-  }
 }
